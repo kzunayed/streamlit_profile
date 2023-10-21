@@ -20,7 +20,7 @@ st.set_page_config(
 # Page Title and Introduction
 st.title('Software Engineer | Data Engineer | Instructor | Student')
 st.write("Welcome to my official webpage. This is where I share my experiences and skills with the world. I hope to learn "
-         "from you as well so please feel free to reach out to me at the contact section below.")
+         "from you as well so please feel free to connect with me on social media")
 
 # Video Section
 st.header('Behind the Screen :movie_camera:')
@@ -41,7 +41,7 @@ st.write("Outside of my professional and personal tech pursuits, I enjoy tutorin
 
 # Resume Section
 st.header('Resume')
-resume_path = 'C:/Users/Anabil/Downloads/Kazi_Islam_Resume (2).pdf'
+resume_path = 'assets/resume.pdf'
 with open(resume_path, "rb") as f:
     base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
